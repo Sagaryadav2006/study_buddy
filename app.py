@@ -53,7 +53,7 @@ except Exception as e:
 
 def get_gemini_response(prompt_text):
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-pro') 
         with st.spinner("🤖 AI is thinking..."):
             response = model.generate_content(prompt_text)
         return response.text
@@ -154,4 +154,5 @@ with tab4:
             st.warning("Please enter a topic.")
 
 st.markdown("---")
+
 st.markdown("<div style='text-align: center; color: grey;'>Built with Streamlit & Gemini API</div>", unsafe_allow_html=True)
