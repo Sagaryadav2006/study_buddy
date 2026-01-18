@@ -14,7 +14,7 @@ st.markdown("""
     .main-header { font-size: 2.5rem; color: #4A90E2; text-align: center; margin-bottom: 1rem; }
     .sub-header { font-size: 1.2rem; color: #555; text-align: center; margin-bottom: 2rem; }
     .stButton>button { width: 100%; background-color: #4A90E2; color: white; font-weight: bold; }
-    .stTextArea textarea { background-color: #f0f2f6; }
+    .stTextArea textarea { background-color: #000000; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -108,3 +108,4 @@ with tab4:
             st.markdown(get_gemini_response(prompt))
         else:
             st.warning("Please enter a topic.")
+
